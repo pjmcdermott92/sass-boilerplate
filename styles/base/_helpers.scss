@@ -1,0 +1,37 @@
+// CSS Helper Classes
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.container {
+    max-width: $max-width; /* 1 */
+    margin-left: auto; /* 2 */
+    margin-right: auto; /* 2 */
+    padding-left: 20px; /* 3 */
+    padding-right: 20px; /* 3 */
+    width: 100%; /* 1 */
+}
+
+// Hide text while allowing it to be visible for screen readers
+// Mainly for WebKit browsers
+.hide-text {
+    overflow: hidden;
+    padding: 0; /* 1 */
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+// Hide an element while making it visible for screen readers.
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
